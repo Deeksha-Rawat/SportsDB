@@ -1,0 +1,1 @@
+export const Logo = 'https://www.thesportsdb.com/images/svg/site_logo_dark.svg';
