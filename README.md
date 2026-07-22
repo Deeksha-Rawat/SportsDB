@@ -11,8 +11,6 @@ npm install
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`.
-
 Other scripts:
 
 ```bash
@@ -55,10 +53,10 @@ src/
 │   └── SeasonBadgeModal/     #   fetches the season badge on open
 ├── Screens/
 │   └── Homepage/             #   composes the above into the main page
-├── constants.js               #   static asset URLs (logo)
+├── constants.js              #   static asset URLs (logo)
 ├── App.jsx
 ├── main.jsx
-└── index.css                  #   Tailwind entry point + custom theme tokens
+└── index.css                 #   Tailwind entry point + custom theme tokens
 ```
 
 ## Notes
