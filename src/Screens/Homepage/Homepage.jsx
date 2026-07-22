@@ -7,30 +7,6 @@ import useFilterLeagues from "../../hooks/useFilterLeagues";
 import { useState } from "react";
 import { Logo } from "../../constants";
 export default function Homepage() {
-  const FAKE_LEAGUES = [
-    {
-      idLeague: "4328",
-      strLeague: "English Premier League",
-      strSport: "Soccer",
-    },
-    {
-      idLeague: "4329",
-      strLeague: "English League Championship",
-      strSport: "Badminton",
-    },
-    {
-      idLeague: "4330",
-      strLeague: "Scottish Premier League",
-      strSport: "Hockey",
-    },
-    { idLeague: "4331", strLeague: "German Bundesliga", strSport: "Soccer" },
-    { idLeague: "4332", strLeague: "Italian Serie A", strSport: "Soccer" },
-    { idLeague: "4334", strLeague: "French Ligue 1", strSport: "Soccer" },
-    { idLeague: "4335", strLeague: "Spanish La Liga", strSport: "Soccer" },
-    { idLeague: "4336", strLeague: "Greek Super League 1", strSport: "Soccer" },
-    { idLeague: "4337", strLeague: "Dutch Eredivisie", strSport: "Soccer" },
-    { idLeague: "4338", strLeague: "Belgian Pro League", strSport: "Soccer" },
-  ];
   const { leagues, isLoading, error } = useAllLeagues();
   const {
     searchText,
@@ -39,7 +15,7 @@ export default function Homepage() {
     sports,
     selectedOption,
     setSelectedOption,
-  } = useFilterLeagues(FAKE_LEAGUES);
+  } = useFilterLeagues(leagues);
 
   const [selectedLeague, setSelectedLeague] = useState(null);
 
