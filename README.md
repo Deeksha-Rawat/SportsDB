@@ -31,6 +31,10 @@ No environment variables or API keys are required — the app uses TheSportsDB's
 
 All API calls share a single `getData` helper ([src/api/baseapi.js](src/api/baseapi.js)) that prefixes requests with the base URL and throws on a non-OK response.
 
+## Known limitations
+
+- TheSportsDB's free public test key currently only returns 5 leagues from `/all_leagues.php`, all of which are Soccer — this is a limitation of the test key's data, not the app. The sport dropdown is populated dynamically from whatever `strSport` values are present in that response, so it will show more sports automatically once a key with the full league list is used.
+
 ## Project structure
 
 ```
